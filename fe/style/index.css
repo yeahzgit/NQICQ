@@ -1,0 +1,307 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-image: url('../assets/bk.jpg'); 
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	font-family: 'Microsoft Yahei';
+	font-size: 14px;
+}
+
+.room-header {
+	height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #eaeaea;
+	box-sizing: border-box;
+	color: #eaeaea;
+}
+
+.room-nav {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 24px;
+	line-height: 60px;
+}
+
+.app-name {
+	float: left;
+}
+
+.user-pic{
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	border: 1px solid #eaeaea;
+	border-radius: 50%;
+	overflow: hidden;
+	float: right;
+}
+
+.user-pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.room-main {
+	width: 800px;
+	height: 640px;
+	margin: 20px auto;
+	border: 1px solid #eaeaea;
+	color: #333;
+}
+
+.content-box {
+	height: 100%;
+	width: 600px;
+	box-sizing: border-box;
+	float: left;
+	background-color: white;
+}
+
+.chat-content {
+	width: 100%;
+	height: 500px;
+	box-sizing: border-box;
+	border: 1px solid #eaeaea;
+}
+
+.broadcast {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+.chat-list {
+	width: 100%;
+	height: 500px;
+	padding: 10px;
+	overflow: auto;
+	box-sizing: border-box;
+}
+
+.other {
+	width: 100%;
+	text-align: left;
+	position: relative;
+}
+
+.self {
+	width: 100%;
+	text-align: right;
+	position: relative;
+}
+
+.head-pic {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.user-name {
+	position: absolute;
+	margin-left: 10px;
+}
+
+.chat-text {
+	background-color: #5fbbff;
+	min-height: 20px;
+	max-width: 300px;
+	padding: 8px;
+	border-radius: 8px;
+	line-height: 20px;
+}
+
+.qipao {
+	overflow: hidden;
+	margin-top: -10px;
+}
+
+.other .qipao {
+	margin-left: 40px;
+}
+
+.other .corner {
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	border-top: 8px solid #5fbbff;
+	border-right: 8px solid #5fbbff;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid transparent;
+	float: left;
+	margin-top: 8px;
+}
+
+.other .chat-text {
+	float: left;
+}
+
+.self .qipao {
+	margin-right: 40px;
+}
+
+.self .corner {
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	border-top: 8px solid #5fbbff;
+	border-left: 8px solid #5fbbff;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid transparent;
+	float: right;
+	margin-top: 8px;
+} 
+
+.self .chat-text {
+	float: right; 
+}
+
+.input-box {
+	height: 100px;
+	width: 100%;
+	position: relative;
+}
+
+.chat-input {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	border: none;
+  outline: none;
+  padding: 0;
+  resize: none;
+  font-size: 14px;
+  padding: 3px;
+  font-family: 'Microsoft Yahei';
+}
+
+.chat-submit {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	border-radius: 5px;
+	background-color: #5fbbff;
+	height: 25px;
+	width: 60px;
+	text-align: center;
+	line-height: 25px;
+	color: #eaeaea;
+	font-size: 14px;
+	cursor: pointer;
+} 
+
+.chat-submit:hover {
+	background-color: #84c8fa;
+} 
+
+.qipao-user{
+	height:100%;
+	width: 200px;
+	padding: 5px;
+	border-left: 1px solid #eaeaea;
+	box-sizing: border-box;
+	float: right;
+	background-color: white;
+}
+
+.select-qipao {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.select-text {
+	margin-top: 5px;
+}
+
+.select-qipao .qipao {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.select-qipao .qipao:last-child {
+	margin-bottom: 10px; 
+}
+
+.user-number {
+	margin: 10px 0 10px 0;
+}
+
+.user-list {
+	height: 430px;
+	overflow: auto;
+} 
+
+.user-list li {
+	height: 20px;
+	margin: 4px;
+}
+
+.list-head {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.list-name {
+	vertical-align: super;
+}
+
+.room-footer {
+	height: 80px;
+	width: 100%;
+	border-top: 1px solid #eaeaea;
+	box-sizing: border-box;
+	color: #eaeaea;
+}
+
+.copyright {
+	width: 90%;
+	line-height: 80px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/** {
+	border: none !important;
+}*/
