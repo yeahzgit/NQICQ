@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./style/base.css">
 	<link rel="stylesheet" type="text/css" href="./style/index.css">
-	<title>NQICQ</title>
+	<title>NQICQ - ChatRoom</title>
 </head>
 <body>
 <header class="room-header">
@@ -17,7 +18,11 @@
 <main class="room-main">
 	<section class="content-box">
 		<section class="broadcast">
-			<div behavior="scroll" >请注意聊天用词</div>
+			<div>请注意聊天用词</div>
+			<p class="system-message">
+				<span>系统消息: 24:00 - 6:00系统维护，届时聊天室将不可用</span>
+				<span class="message-close">×</span>
+			</p>
 		</section>
 		<section class="chat-content">
 			<ul class="chat-list">
@@ -207,5 +212,6 @@
 <footer class="room-footer">
 	<p class="copyright">Copyright &copy yeahz 2017</p>
 </footer>
+<script type="text/javascript" src="./javascript/chatroom.js"></script>
 </body>
 </html>
