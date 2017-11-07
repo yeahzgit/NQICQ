@@ -84,12 +84,32 @@
 	width: 100%;
 	text-align: left;
 	position: relative;
+	margin-top: 15px;
 }
 
 .self {
 	width: 100%;
 	text-align: right;
 	position: relative;
+	margin-top: 15px;
+}
+
+.in-out {
+	width: 100%;
+	margin: 15px 0;
+}
+
+.in-out p {
+	width: 150px;
+	padding: 0px 10px;
+	height: 20px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 8px;
+	background-color: #ecf0f1;
+	font-size: 12px;
+	line-height: 20px;
+	color: #bdc3c7;
 }
 
 .head-pic {
@@ -110,6 +130,8 @@
 	padding: 8px;
 	border-radius: 8px;
 	line-height: 20px;
+	word-wrap: break-word;
+  text-align: left;
 }
 
 .qipao {
@@ -242,6 +264,15 @@
 	border-radius: 50%;
 }
 
+.off-line {
+	-webkit-filter: grayscale(100%);  
+	-moz-filter: grayscale(100%);  
+	-ms-filter: grayscale(100%);  
+	-o-filter: grayscale(100%);   
+	filter: grayscale(100%);  
+}
+
 .list-name {
+	padding-left: 10px;
 	vertical-align: super;
 }

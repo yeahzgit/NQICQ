@@ -4,6 +4,12 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./style/base.css">
 	<link rel="stylesheet" type="text/css" href="./style/index.css">
+	<script type="text/javascript">
+	//是否登录
+	if(!window.sessionStorage.getItem('token')) {
+		window.location.href = './login.html';
+	}
+	</script>
 	<title>NQICQ - ChatRoom</title>
 </head>
 <body>
@@ -11,7 +17,7 @@
 	<nav class="room-nav">
 		<h1 class="app-name">NQICQ</h1>
 		<div class="user-pic">
-			<img src="./assets/pic.png">
+			<img>
 		</div>
 	</nav>
 </header>
@@ -19,77 +25,9 @@
 	<section class="content-box">
 		<section class="broadcast">
 			<div>请注意聊天用词</div>
-			<p class="system-message">
-				<span>系统消息: 24:00 - 6:00系统维护，届时聊天室将不可用</span>
-				<span class="message-close">×</span>
-			</p>
 		</section>
 		<section class="chat-content">
 			<ul class="chat-list">
-				<li class="other">
-					<img class="head-pic" src="./assets/pic.png">
-					<span class="user-name">other</span>
-					<div class="qipao">
-						<div class="corner"></div>
-						<p class="chat-text">hello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello self</p>
-					</div>
-				</li>
-				<li class="self">
-					<!-- <span class="user-name">self</span> -->
-					<img class="head-pic" src="./assets/pic.png">
-					<div class="qipao">
-						<div class="corner"></div>
-						<p class="chat-text">hello other</p>
-					</div>
-				</li>
-				<li class="other">
-					<img class="head-pic" src="./assets/pic.png">
-					<span class="user-name">other</span>
-					<div class="qipao">
-						<div class="corner"></div>
-						<p class="chat-text">hello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello self</p>
-					</div>
-				</li>
-				<li class="self">
-					<!-- <span class="user-name">self</span> -->
-					<img class="head-pic" src="./assets/pic.png">
-					<div class="qipao">
-						<div class="corner"></div>
-						<p class="chat-text">hello other</p>
-					</div>
-				</li>
-				<li class="other">
-					<img class="head-pic" src="./assets/pic.png">
-					<span class="user-name">other</span>
-					<div class="qipao">
-						<div class="corner"></div>
-						<p class="chat-text">hello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello self</p>
-					</div>
-				</li>
-				<li class="self">
-					<!-- <span class="user-name">self</span> -->
-					<img class="head-pic" src="./assets/pic.png">
-					<div class="qipao">
-						<div class="corner"></div>
-						<p class="chat-text">hello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello otherhello other</p>
-					</div>
-				</li>
-				<li class="other">
-					<img class="head-pic" src="./assets/pic.png">
-					<span class="user-name">other</span>
-					<div class="qipao">
-						<div class="corner"></div>
-						<p class="chat-text">hello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello selfhello self</p>
-					</div>
-				</li>
-				<li class="self">
-					<!-- <span class="user-name">self</span> -->
-					<img class="head-pic" src="./assets/pic.png">
-					<div class="qipao">
-						<div class="corner"></div>
-						<p class="chat-text">hello other</p>
-					</div>
-				</li>
 			</ul>
 		</section>
 		<section class="input-box">
@@ -113,105 +51,16 @@
 				<p class="chat-text">hello world</p>
 			</div>
 		</section>
-		<h1 class="user-number">成员(11/99)</h1>
+		<h1 class="user-number">成员列表</h1>
 		<ul class="user-list">
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username (chrome)</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li><li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li><li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li><li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li><li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li><li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
-			<li>
-				<img class="list-head"src="./assets/pic.png">
-				<span class="list-name">username</span>
-			</li>
 		</ul>
 	</section>
 </main>
 <footer class="room-footer">
-	<p class="copyright">Copyright &copy yeahz 2017</p>
+	<p class="copyright">Copyright &copy 网络课设小组 2017</p>
 </footer>
-<script type="text/javascript" src="./javascript/chatroom.js"></script>
+<script src="./node_modules/socket.io-client/dist/socket.io.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./javascript/chatroom.js"></script>
 </body>
 </html>

@@ -17,7 +17,11 @@
   "author": "yeahz",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "socket.io": "^2.0.4"
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.0",
+    "socket.io": "^2.0.4",
+    "socketio-jwt": "^4.5.0"
   }
 }
